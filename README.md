@@ -6,7 +6,7 @@
 ***
 ## 目录
 * [第1节Hello World](#第1节-hello-world)
-* [第2节 代码的注释](#第2节-代码的注释--)
+* [第2节代码的注释](#第2节-代码的注释--)
 ## JAVA SE 部分
 ***
 #### 安装配置JAVA环境（略）详情参考  
@@ -27,7 +27,7 @@ https://www.java.com/zh_CN/download/help/download_options.xml    
   * public class 类名称{}：文件名（Hello.java）与类名称保持一致
   * class 类名称{}：文件名（Hello.java）与 类名称 可以不一致，可以同时存在多个class，编译后形成各自的*.class文件
 * 主方法：所以的程序都由主方法开始执行 public static void main(String[]args){}  
-#### 第2节 代码的注释  
+#### 第2节 代码的注释
   代码的注释意思是，你的代码并不会被程序执行，就相当于一段文本。
 * // 单行注释；
 * /*...*/ 多行注释；
