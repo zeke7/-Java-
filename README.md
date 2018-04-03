@@ -50,7 +50,7 @@ https://www.java.com/zh_CN/download/help/download_options.xml    
      public void sayHello(){}
     }
 ```  
-#### 第3节 标识符与关键字  
+#### 第3节 标识符与关键字
   标识符通俗的说就是，程序中各个类或者变量或者方法的名字，其由字母、数字、_、$组成，不能是JAVA保留的关键字，并且不能以数字开头。    
   标识符可以使用中文，但是不推荐使用。
   关键字参考百度百科：https://baike.baidu.com/item/java%E5%85%B3%E9%94%AE%E5%AD%97  
