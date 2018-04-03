@@ -73,11 +73,15 @@ https://www.java.com/zh_CN/download/help/download_options.xml    
    double是默认的小数类型，float的范围比double小，具体转换的例子在DataTypeDemo.java中有代码。  
    整形不保留小数位，要使用double数据类型来显示小数。
 #### char （数据类型cont’d）  
-    
-#### boolean （数据类型cont’d）  
-#### String （数据类型cont’d）  
-  
-
+   char使用 “ ' ” 声明内容。  
+   字符（char）可以与int类型互相转换（编码形式 ASCII部分编码）需要注意 '0'(char) 与 0 (int) 是不一样的，具体的例子在DataTypeDemo.java中。
+#### boolean （数据类型cont’d）  
+   只有两种取值：true, false。多用于条件判断，具体的例子在DataTypeDemo.java中。
+#### String （数据类型cont’d）  
+  String使用 “ " ” 声明内容。  
+  String表示的是一个字符串（多个字符的集合），可以使用“+”进行连接操作
+  转义字符：换行(\n), 制表符(\t), \(\\), 双引号(\"), 单引号(\')  
+#### 第5节 运算符
 
 
 
