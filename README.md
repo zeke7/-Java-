@@ -48,7 +48,7 @@ https://www.java.com/zh_CN/download/help/download_options.xml    
   标识符通俗的说就是，程序中各个类或者变量或者方法的名字，其由字母、数字、_、$组成，不能是JAVA保留的关键字，并且不能以数字开头。  
   标识符可以使用中文，但是不推荐使用。
   关键字参考百度百科：https://baike.baidu.com/item/java%E5%85%B3%E9%94%AE%E5%AD%97  
-#### 第4节 数据类型 本节代码:[DataTypeDemo.java]()  
+#### 第4节 数据类型 本节代码:[DataTypeDemo.java](/Java_examples/DataTypeDemo.java)  
   Java数据类型分为 内置类型 和 引用数据类型 两大类  
   内置类型有： 
 * boolean	布尔值，作二元判断	true, false （逻辑控制）
