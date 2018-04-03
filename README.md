@@ -4,11 +4,13 @@
 本笔记将从最基础的JAVA SE开始到JAVA EE 以及后面的一系列框架    
 喜欢的同学可以star一下我哦。。。如果有哪里出错的或者有问题的请发邮件联系我！（hfang@coastal.edu）  
 ***
+## 目录
+* [第1节(Hello World)](#第1节 （Hello World）)
 ## JAVA SE 部分
 ***
 #### 安装配置JAVA环境（略）详情参考  
 https://www.java.com/zh_CN/download/help/download_options.xml    
-#### 第1节 （Hello World）  
+第1节 （Hello World）  
 建立 Hello.java 文件，先来一个最简单的应用程序：  
 ```Java
   public class Hello{
@@ -45,7 +47,7 @@ https://www.java.com/zh_CN/download/help/download_options.xml    
     }
 ```  
 #### 第3节 标识符与关键字  
-  标识符通俗的说就是，程序中各个类或者变量或者方法的名字，其由字母、数字、_、$组成，不能是JAVA保留的关键字，并且不能以数字开头。  
+  标识符通俗的说就是，程序中各个类或者变量或者方法的名字，其由字母、数字、_、$组成，不能是JAVA保留的关键字，并且不能以数字开头。    
   标识符可以使用中文，但是不推荐使用。
   关键字参考百度百科：https://baike.baidu.com/item/java%E5%85%B3%E9%94%AE%E5%AD%97  
 #### 第4节 数据类型 本节代码:[DataTypeDemo.java](/Java_examples/DataTypeDemo.java)  
