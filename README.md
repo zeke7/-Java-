@@ -5,7 +5,7 @@
 喜欢的同学可以star一下我哦。。。如果有哪里出错的或者有问题的请发邮件联系我！（hfang@coastal.edu）  
 ***
 ## 目录
-* [第1节Hello World](#第1节-Hello-World)
+* [第1节Hello World](#第1节-hello-world)
 * [第2节 代码的注释](#第2节-代码的注释)
 ## JAVA SE 部分
 ***
