@@ -78,9 +78,9 @@ https://www.java.com/zh_CN/download/help/download_options.xml    
 #### boolean （数据类型cont’d）  
    只有两种取值：true, false。多用于条件判断，具体的例子在DataTypeDemo.java中。
 #### String （数据类型cont’d）  
-  String使用 “ " ” 声明内容。  
-  String表示的是一个字符串（多个字符的集合），可以使用“+”进行连接操作
-  转义字符：换行(\n), 制表符(\t), \(\\), 双引号(\"), 单引号(\')  
+  String使用 “ " ” 声明内容。  
+  String表示的是一个字符串（多个字符的集合），可以使用“+”进行连接操作  
+  转义字符：换行(\n), 制表符(\t), \(\\), 双引号(\"), 单引号(\')  
 #### 第5节 运算符
 
 
