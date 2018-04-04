@@ -12,6 +12,7 @@
 * [第4节 数据类型](#第4节-数据类型)
 * [第5节 运算符](#第5节-运算符)
 * [第6节 程序逻辑控制](#第6节-程序逻辑控制)
+* [第7节 方法的使用](#第7节-方法的使用)
 ## JAVA SE 部分
 ***
 #### 安装配置JAVA环境（略）详情参考  
@@ -49,7 +50,7 @@ https://www.java.com/zh_CN/download/help/download_options.xml    
         /** 文档注释
           ... IDE 会帮助编写 （Integrated Development Environment）
          */
-     public void sayHello(){}
+     public static void sayHello(){}
     }
 ```  
 #### 第3节 标识符与关键字
@@ -99,5 +100,76 @@ https://www.java.com/zh_CN/download/help/download_options.xml    
   &与&&的区别在于，& 会执行所有的判断条件，而 && 当一系列条件从前往后，某一个条件不符合时就不再判断后面的条件。  
   |与||的区别在于，| 会执行所有的判断条件只要有一个条件正确就返回true，而 || 当一系列条件从前往后，某一个条件符合时就返回true就不再判断后面的条件。
 #### 第6节 程序逻辑控制
-
+本节代码:[LogicDemo.java](/Java_examples/LogicDemo.java)  
+通过分支结构控制程序的逻辑：  
+```Java
+  public class Hello{
+    public static void main(String[]args){
+    //第一种通过if...else的方式
+         if(条件){
+          //满足条件
+          ...do something
+         }else{
+          //不满足条件
+          ...do something
+         }
+    //第二种通过if...else if...else if..若干...else 的方式
+        if(条件1){
+          //满足条件1
+          ...do something
+         }else if(条件2){
+          //满足条件2
+          ...do something
+         }else if(条件3){
+          //满足条件3
+          ...do something
+         }else{
+          //不满足以上条件
+          ..do something
+         }
+    //第三者通过switch进行条件判断
+        switch(整数|字符|枚举|字符串){
+            case 内容1:{
+               //满足内容1
+               [break;]
+            }
+            case 内容1:{
+               //满足内容2
+               [break;]
+            }
+            case 内容1:{
+               //满足内容3
+               [break;]
+            }
+            ...
+            [default: {
+              //不满足以上任意一个内容，默认情况...
+            }]
+        }
+        //如果不添加break的话，switch就会从第一个满足条件的case开始执行接下来的所有case
+        
+      }
+```  
+通过循环结构控制程序的逻辑： 
+  主要分为两种，while循环和for循环
+  * while循环的用法为：  
+  ```Java
+      while(条件){
+        ....do something  
+      }  //当条件满足，便会一直执行其中的程序
+      
+      do{
+        ...do something
+      }while(条件){
+        ...do something
+      } //先执行do中的程序，如果条件满足再进入while
+  ```
+  * for循环的用法为：  
+   ```Java
+    for(初始化条件; 循环判断; 条件变更){
+          ...do something
+    }
+   ```  
+ 对于循环的控制，使用两种关键字: continue(推出此次循环继续下一次循环)， break(完全退出循环)
+ #### 第7节 方法的使用
 
