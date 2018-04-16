@@ -17,7 +17,7 @@
 * [第9节 数组](#第9节-数组)
 * [第10节 String](#第10节-string)
 * [第11节 static关键字](#第11节-static关键字)
-* [第12节 代码块和内部类](#第12节-码块和内部类)
+* [第12节 代码块和内部类](#第12节-代码块和内部类)
 ***
 #### 安装配置JAVA环境（略）详情参考  
 https://www.java.com/zh_CN/download/help/download_options.xml    
