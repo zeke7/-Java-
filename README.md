@@ -18,6 +18,7 @@
 * [第10节 String](#第10节-string)
 * [第11节 static关键字](#第11节-static关键字)
 * [第12节 代码块和内部类](#第12节-代码块和内部类)
+* [第13节 继承 覆写 抽象类](#第13节-继承-覆写-抽象类)
 ***
 #### 安装配置JAVA环境（略）详情参考  
 https://www.java.com/zh_CN/download/help/download_options.xml    
@@ -291,8 +292,47 @@ new 关键字引出一个概念，引用数据类型（分为 类，接口，和
  * static方法不能直接访问 非static属性或者方法  
    非static属性或者方法 没有限制调用其他方法，但其本身必须被实例化对象调用
  #### 第12节 代码块和内部类
- 本节代码:[InnerClassDemo.java](/Java_examples/InnerClassDemo.java) 
-		
+ 代码块分为：普通代码块（没用...），构造块（没用...），静态块（优先执行），同步代码块  
+ 内部类：  
+   ```Java
+   class Car{  //外部类
+   	private String msg = "Hello";
+        class Brand{ //内部类
+	      private String brand = "BMW";
+	      public void print(){
+		    System.out.println(msg); //内部类可以直接使用外部类的私有属性，不需要实例化对象
+		    System.out.println("Car Brand");
+		}
+	     }
+	     //外部类可以轻松地使用内部类的私有属性
+	     public void printBrand(){
+	     	 new Brand().print();  //内部类对象
+		 System.out.println(new Brand().brand);
+	    }
+	}
+	public class TestDemo{
+		public static void main(String args[]){
+			Car car1 = new Car() ;
+			car1.printBrand() ;
+			//直接实例化内部类对象
+			Car.Brand brand1 = new Car().new Brand();
+		}
+	}
+   ```
+ #### 第13节 继承 覆写 抽象类
+  本节代码:  
+[ExtendsDemo.java](/Java_examples/ExtendsDemo.java)  
+[OverwriteDemo.java](/Java_examples/OverwriteDemo.java)  
+[AbstractDemo.java](/Java_examples/AbstractDemo.java)  
+ ***
+**继承**  *解决代码重用*  
+class 子类 extends 父类 {}
+* 子类被称为派生类（derived class）, 父类称为超类（super class）  
+  子类可以继承使用父类的方法，并可以扩充自己的方法和功能  
+  父类私有的属性（private）被子类使用但是不能被子类直接访问
+* 限制：不允许多重继承（解决方法，B类继承A类，C类继承B类实现C类继承A,B两类）
+
+ 
 
  
 
