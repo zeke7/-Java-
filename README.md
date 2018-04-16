@@ -17,6 +17,7 @@
 * [第9节 数组](#第9节-数组)
 * [第10节 String](#第10节-string)
 * [第11节 static关键字](#第11节-static关键字)
+* [第12节 代码块和内部类](#第12节-码块和内部类)
 ***
 #### 安装配置JAVA环境（略）详情参考  
 https://www.java.com/zh_CN/download/help/download_options.xml    
@@ -281,8 +282,17 @@ new 关键字引出一个概念，引用数据类型（分为 类，接口，和
  * substring() 字符串截取
  * split() 字符串拆分  
  ......还有一些方法在实例Demo中有提供
- #### 第11节 static关键字
-  
+ #### 第11节 static关键字  
+ 本节代码:[StaticDemo.java](/Java_examples/StaticDemo.java) 
+ Static 可以用来声明属性和方法  
+ * static 属性为全局属性, 一个对象对他进行修改后, 此属性在其他对象中也被修改  
+   可以使用 类直接调用此属性进行修改 (在没有实例化对象的情况下也可以操作此属性)
+ * static方法, 可以在没有实例化对象的情况下调用  
+ * static方法不能直接访问 非static属性或者方法  
+   非static属性或者方法 没有限制调用其他方法，但其本身必须被实例化对象调用
+ #### 第12节 代码块和内部类
+ 本节代码:[InnerClassDemo.java](/Java_examples/InnerClassDemo.java) 
+		
 
  
 
