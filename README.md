@@ -16,7 +16,7 @@
 * [第8节 面向对象](#第8节-面向对象)
 * [第9节 数组](#第9节-数组)
 * [第10节 String](#第10节-string)
-* [第11节 this关键字](#第11节-this关键字)
+* [第11节 static关键字](#第11节-static关键字)
 ***
 #### 安装配置JAVA环境（略）详情参考  
 https://www.java.com/zh_CN/download/help/download_options.xml    
@@ -281,7 +281,7 @@ new 关键字引出一个概念，引用数据类型（分为 类，接口，和
  * substring() 字符串截取
  * split() 字符串拆分  
  ......还有一些方法在实例Demo中有提供
- #### 第11节 this关键字
+ #### 第11节 static关键字
   
 
  
