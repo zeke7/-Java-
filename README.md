@@ -16,7 +16,7 @@
 * [第8节 面向对象](#第8节-面向对象)
 * [第9节 数组](#第9节-数组)
 * [第10节 String](#第10节-string)
-## JAVA SE 部分
+* [第11节 this关键字](#第11节-this关键字)
 ***
 #### 安装配置JAVA环境（略）详情参考  
 https://www.java.com/zh_CN/download/help/download_options.xml    
@@ -263,16 +263,25 @@ new 关键字引出一个概念，引用数据类型（分为 类，接口，和
  * String的常量定义之后不能进行更改
  ***
  **String 的常用操作方法**
- 
- 
-
-
-   
-
-
-
-
-
+ **此内容多在于StringDemo2.java中实例**  *此处仅仅列出常用方法* 
+ * charAt()方法返回指定index的字符
+ * toCharArray() 将字符串转换为字符数组
+ * getBytes() 字符串变为字节数组方便数据传输和转换 
+ * equals()进行字符串比较，区分大小写
+ * equalsIgnoreCase()进行字符串比较，区分大小写
+ * compareTo()通过字符编码判断两个字符串大小
+ * contains()判断子字符串是否存在
+ * indexOf()从前向后查找字符串，返回第一个字符的位置
+ * lastIndexOf()从后向前查找字符串，返回第一个字符的位置
+ * startWith() 是否以指定字符串开头
+ * endsWith() 是否以指定字符串结尾
+ * contains() 判断子字符串是否存在
+ * replaceAll() 字符串替换，全部替换
+ * replaceFirst() 替换首个符合要求的字符
+ * substring() 字符串截取
+ * split() 字符串拆分  
+ ......还有一些方法在实例Demo中有提供
+ #### 第11节 this关键字
   
 
  
