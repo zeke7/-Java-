@@ -18,7 +18,8 @@
 * [第10节 String](#第10节-string)
 * [第11节 static关键字](#第11节-static关键字)
 * [第12节 代码块和内部类](#第12节-代码块和内部类)
-* [第13节 继承 覆写 抽象类](#第13节-继承-覆写-抽象类)
+* [第13节 继承 覆写 抽象类](#第13节-继承-覆写)
+* [第14节 抽象类 接口](#第14节-抽象类-接口)
 ***
 #### 安装配置JAVA环境（略）详情参考  
 https://www.java.com/zh_CN/download/help/download_options.xml    
@@ -321,9 +322,9 @@ new 关键字引出一个概念，引用数据类型（分为 类，接口，和
    ```
  #### 第13节 继承 覆写
   本节代码:  
-[ExtendsDemo.java](/Java_examples/ExtendsDemo.java)  
+[ExtendsDemo.java](/Java_examples/ExtendsDemo.java)  
 [OverwriteDemo.java](/Java_examples/OverwriteDemo.java)  
-[AbstractDemo.java](/Java_examples/AbstractDemo.java)  
+[PolymorphismDemo.java](/Java_examples/PolymorphismDemo.java)  
  ***
 **继承**  *解决代码重用*  
 class 子类 extends 父类 {}
@@ -333,11 +334,19 @@ class 子类 extends 父类 {}
   子类在调用自己的构造前，先调用父类的无参构造， super()(在父类没有无参构造的情况下，必须加上)
 * 限制：不允许多重继承（解决方法，B类继承A类，C类继承B类实现C类继承A,B两类）
 ***
-**覆写**  *与重载不同*
+**覆写**  *与重载不同*  
 子类中的属性或者方法可能与父类中的属性或者方法同名，此时就需要使用覆写  
 * 方法的覆写：如果子类没有覆写父类中的方法，子类的实例化对象将使用父类中的方法。被子类覆写的方法，不能比父类拥有更严格的访问控制权限（public > default > private),父类中的方法如果使用private声明，子类无法进行覆写  
 ***
- 抽象类
+**对象多态性**  
+方法的多态性：本质上来说就是方法的重载和覆写  
+对象的多态性：对象的向上（自动）向下（强制）转型
+* 向上转型：同一个方法针对不同子类有不同的实现
+* 向下转型：父类调用子类的方法，为了防止出现转型错误，使用 instanceof
+ #### 第14节 抽象类 接口
+  本节代码:  
+[AbstractDemo.java](/Java_examples/AbstractDemo.java)  
+[InterfaceDemo.java](/Java_examples/InterfaceDemo.java)
 	
 
  
