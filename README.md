@@ -20,6 +20,7 @@
 * [第12节 代码块和内部类](#第12节-代码块和内部类)
 * [第13节 继承 覆写 抽象类](#第13节-继承-覆写)
 * [第14节 抽象类 接口](#第14节-抽象类-接口)
+* [第15节 Object类](#第15节-object类)
 ***
 #### 安装配置JAVA环境（略）详情参考  
 https://www.java.com/zh_CN/download/help/download_options.xml    
@@ -346,8 +347,31 @@ class 子类 extends 父类 {}
  #### 第14节 抽象类 接口
   本节代码:  
 [AbstractDemo.java](/Java_examples/AbstractDemo.java)  
-[InterfaceDemo.java](/Java_examples/InterfaceDemo.java)
-	
+[InterfaceDemo.java](/Java_examples/InterfaceDemo.java)  
+***
+**抽象类**
+* 抽象方法要使用abstract进行声明，
+* 并且拥有抽象方法的类一定是抽象类同样要是由abstract进行声明
+* 法对抽象类进行实例化对象，抽象类必须拥有子类，抽象类的子类必须覆写抽象类中的全部抽象方法
+* 抽象类的对象实例化对象需要依靠子类完成，向上转型
+* 抽象类中会有一些属性，抽象类中同样存在构造方法对这些属性进行初始化
+* 抽象类不能使用final进行定义，因为抽象类必须拥有子类  
+***
+**接口**
+* 接口的组成：特殊的类，只有抽象方法和全局常量。使用interface关键字进行定义
+* 接口必须要有子类，一个子类可以implements多个接口，接口的子类覆写接口中的所有抽象方法，并且采用向上转型的方法进行实例化操作
+* 接口里面只有一种访问权限：public
+* 一个接口可以使用extends同时继承多个接口，接口不能继承抽象类
+* 接口用来定义不同层之间的操作标准
+ #### 第15节 Object类
+  本节代码:  
+[ObjectDemo.java](/Java_examples/ObjectDemo.java)  
+
+
+
+
+
+
 
  
 
