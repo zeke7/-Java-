@@ -21,6 +21,7 @@
 * [第13节 继承 覆写 抽象类](#第13节-继承-覆写)
 * [第14节 抽象类 接口](#第14节-抽象类-接口)
 * [第15节 Object类](#第15节-object类)
+* [第16节 访问控制权限](#第16节-访问控制权限)
 ***
 #### 安装配置JAVA环境（略）详情参考  
 https://www.java.com/zh_CN/download/help/download_options.xml    
@@ -366,9 +367,10 @@ class 子类 extends 父类 {}
  #### 第15节 Object类
   本节代码:  
 [ObjectDemo.java](/Java_examples/ObjectDemo.java)  
-
-
-
+Object类是所有类的父类，
+Object类可以接收全部类的对象，可以向上自动转型
+可以通过Object类来实现类中的equals功能，eclipse可以自动生成
+ #### 第16节 访问控制权限
 
 
 
