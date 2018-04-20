@@ -4,7 +4,7 @@
 * [第17节 泛型](#第17节-泛型)  
 ***
 ### 第16节 异常  
-本节示例代码：[ExceptionDemo](/Java_examples/ExceptionDemo.java)  
+本节示例代码：[ExceptionDemo](/Java_examples/ExceptionDemo.java)  
 异常是导程序中断的一种指令，如果异常出现没有进行处理的话，程序就将中断执行  
 对于异常的处理就是，即使异常出现也要使得程序尽可能地执行完毕  
 * 对于异常的处理  
