@@ -2,6 +2,8 @@
 ***
 * [第16节 异常](#第16节-异常)  
 * [第17节 泛型](#第17节-泛型)  
+* [第18节 枚举](#第18节-枚举)
+* [第19节 Annotation](#第19节-annotation)
 ***
 ### 第16节 异常  
 本节示例代码：[ExceptionDemo](/Java_examples/ExceptionDemo.java)  
@@ -43,3 +45,4 @@
 	* ？super 类：设置泛型下限，设置为此类，或者此类的父类。
 ### 第18节 枚举  
 本节示例代码：[EnumDemo](/Java_examples/EnumDemo.java)   
+### 第19节 Annotation  
