@@ -37,3 +37,9 @@
     RuntimeException可以选择性处理，不处理的话JVM会进行默认处理
 ### 第17节 泛型  
 本节示例代码：[GenericDemo](/Java_examples/GenericDemo.java)   
+* 泛型能采用的类型只能是类，而不能是基本数据类型  
+* 在泛型接受参数时，为了使参数统一，使用通配符 “？” 来表示接收的类型
+    * ？extends 类：设置泛型上限，设置为此类，或者此类的子类。
+    * ？super 类：设置泛型下限，设置为此类，或者此类的父类。
+### 第18节 枚举  
+本节示例代码：[EnumDemo](/Java_examples/EnumDemo.java)   
