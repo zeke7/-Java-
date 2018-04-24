@@ -5,7 +5,8 @@
 * [第18节 枚举](#第18节-枚举)
 * [第19节 Lambda表达式](#第19节-lambda表达式)
 * [第20节 方法引用](#第20节-方法引用) 
-* [第21节 线程](第21节-线程)
+* [第21节 线程](#第21节-线程)
+* [第22节 基础类库](#第22节-基础类库)
 ***
 ### 第16节 异常  
 本节示例代码：[ExceptionDemo](/Java_examples/ExceptionDemo.java)  
@@ -49,7 +50,7 @@
 本节示例代码：[EnumDemo](/Java_examples/EnumDemo.java)   
 ### 第19节 Lambda表达式 
 本节示例代码：[LambdaDemo](/Java_examples/LambdaDemo.java)  
-### 第20节 方法引用  
+### 第20节 方法引用
 本节示例代码：[MethodReferDemo](/Java_examples/MethodReferDemo.java)  
 * 引用静态方法：类名称::static 方法名称
 * 引用某个对象的方法：实例化对象::普通方法  
@@ -61,5 +62,61 @@
 * 消费型接口(Consumer) - 接收数据
 * 供给型接口(Supplier) - 不接收参数，返回一个结果
 * 断言型接口(Predicate) - 判断
-### 第21节 线程 
+### 第21节 线程
+本节示例代码：  
+[ThreadDemo1](/Java_examples/ThreadDemo1.java)  
+[ThreadDemo2](/Java_examples/ThreadDemo2.java)  
+[ThreadDemo3](/Java_examples/ThreadDemo3.java)  
+[ThreadDemo4](/Java_examples/ThreadDemo4.java)  
+[ThreadDemo5](/Java_examples/ThreadDemo5.java)
+
+进程：一次程序的完整运行，计算机的资源对这个进程进行服务。同一个时间段上，会有多个进程轮流抢占计算机的资源，某一个时间点上只有一个进程运行。  
+
+### 线程：一个进程上有多个线程，比进程更快，所占资源更少
+* 两种途径：
+    * 继承Thread类
+    * 实现Runnable接口(Callable接口)  
+**不管使用什么方法，启动多线程一定依靠Thread类完成**
+
+* 继承Thread类
+    * 线程操作主体类中必须覆写Thread类中提供的run()方法
+    * 多线程启动的方法是Thread类中的start()方法，执行的方法体是run()方法中
+* 实现Runnable接口
+    * 避免单继承
+    * 覆写接口中提供的run()方法
+#### 两种方式的区别：
+    * Runnable接口可以比Thread类能够更好的实现数据共享(多个线程访问同一资源的操作)
+    * Thread类是Runnable接口的子类
+    * 用Runnable实现线程主体类，用Thread类启动线程。
+
+* 另一种实现方式：Callable接口
+    * 可以返回一个结果
+    * Thread类中没有直接支持Callable接口的多线程应用
+    * FutureTask类,接收Callable接口对象从而取得call()方法的返回结果
+    * FutureTask类是Runnable接口子类，可以使用Thread类的构造来接收FutureTask对象
+    * 线程执行结束后使用FutureTask的父接口Future中的get()方法完成
+ 
+* 线程的命名与取得  
+    * 线程的名字在其启动之前进行定义  
+    * 可以使用Thread的构造方法给线程设置名称  
+    * mian方法(main线程，主方法就是主线程），在主方法上创建的线程都是子线程  
+
+* 当使用Java程序去解释一段程序的时候，操作系统会一个新的进程，mian是这个进程上的一个线程  
+
+* JVM 进程启动的时候至少启动两个线程  
+    * main线程  
+    * gc线程  
+
+* 线程的休眠：使线程的执行速度变慢  
+
+* 线程优先级  
+    * 设置优先级 setPriority(int newPriority)  
+    * 取得优先级 getPriority()  
+
+### 线程的同步和死锁  
+* 同步问题：判断和修改数据是分开完成的
+    * 实现线程同步，使用synchronized关键字
+    * 异步操作速度快于同步操作，但是同步操作数据的安全性较高
+* 死锁：线程一直等待
+### 第22节 基础类库
 
