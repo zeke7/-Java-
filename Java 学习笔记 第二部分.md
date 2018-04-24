@@ -7,6 +7,7 @@
 * [第20节 方法引用](#第20节-方法引用) 
 * [第21节 线程](#第21节-线程)
 * [第22节 基础类库](#第22节-基础类库)
+* [第23节 数字操作类](#第23节-数字操作类)
 ***
 ### 第16节 异常  
 本节示例代码：[ExceptionDemo](/Java_examples/ExceptionDemo.java)  
@@ -119,4 +120,40 @@
     * 异步操作速度快于同步操作，但是同步操作数据的安全性较高
 * 死锁：线程一直等待
 ### 第22节 基础类库
+本节示例代码：  
+[StringBufferDemo](/Java_examples/StringBufferDemo.java)  
+[RuntimeDemo](/Java_examples/RuntimeDemo.java)  
+[SystemDemo](/Java_examples/SystemDemo.java) 
+#### StringBuffer
+StringBuffer类的内容是可以进行修改的，而String的内容无法进行修改  
+    * String 与 StringBuffer 都是CharSequence接口的子类
 
+String 与 StringBuffer 两类对象无法进行直接转换  
+    * 使用StringBuffer类的构造方法进行转换String  
+    * 利用append()方法转换String  
+    * 使用toString()方法转换StringBuffer  
+
+StringBuffer的常用方法:  
+    * 字符串反转: reverse()  
+    * 指定索引位置增加数据: insert()  
+    * 删除部分数据: delete()  
+
+StringBuilder类属于异步方法  
+
+#### Runtime
+* Runtime类是直接与本地运行有关的相关属性的集合
+* Runtime类定义的时候它的构造方法已经被私有化了，保证进程只有一个Runtime对象
+* 常用方法
+    * 返回所有可用空间 totalMemory()
+    * 最大可用空间 maxMemory()
+    * 空余内存空间 freeMemory()
+    * gc()释放垃圾空间
+* Runtime可以调用本机的可执行程序，创建进程 exec()
+
+#### System类
+* 取得当前系统时间 currentTimeMillis()
+* finalize()方法，回收前使用
+
+### 第23节 数字操作类  
+本节示例代码：  
+[MathDemo](/Java_examples/MathDemo.java)  
