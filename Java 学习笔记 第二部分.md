@@ -7,7 +7,7 @@
 * [第20节 方法引用](#第20节-方法引用) 
 * [第21节 线程](#第21节-线程)
 * [第22节 基础类库](#第22节-基础类库)
-* [第23节 数字操作类](#第23节-数字操作类)
+* [第23节 日期处理](#第23节-日期处理)
 ***
 ### 第16节 异常  
 本节示例代码：[ExceptionDemo](/Java_examples/ExceptionDemo.java)  
@@ -154,6 +154,20 @@ StringBuilder类属于异步方法
 * 取得当前系统时间 currentTimeMillis()
 * finalize()方法，回收前使用
 
-### 第23节 数字操作类  
-本节示例代码：  
-[MathDemo](/Java_examples/MathDemo.java)  
+### 第23节 日期处理
+本节示例代码：  
+[DateDemo](/Java_examples/DateDemo.java)  
+* SimpleDateFormat格式化日期时间: 
+    * public SimpleDateFormat(String pattern) 构造方法
+    * public final String format(Date date) 将Date转换为String
+    * public Date parse(String source)throws ParseException 将String转换为Date
+* 转换格式："yyyy-MM-dd HH:mm:ss.SSS" ==> "年-月-日 小时:分钟:秒.毫秒"  
+
+### 第24节 比较器
+
+
+
+
+
+
+
