@@ -8,6 +8,7 @@
 * [第21节 线程](#第21节-线程)
 * [第22节 基础类库](#第22节-基础类库)
 * [第23节 日期处理](#第23节-日期处理)
+* [第24节 正则表达式](#第24节-正则表达式)
 ***
 ### 第16节 异常  
 本节示例代码：[ExceptionDemo](/Java_examples/ExceptionDemo.java)  
@@ -163,7 +164,7 @@ StringBuilder类属于异步方法
     * public Date parse(String source)throws ParseException 将String转换为Date
 * 转换格式："yyyy-MM-dd HH:mm:ss.SSS" ==> "年-月-日 小时:分钟:秒.毫秒"  
 
-### 第24节 比较器
+### 第24节 正则表达式
 
 
 
