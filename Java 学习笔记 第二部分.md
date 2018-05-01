@@ -9,7 +9,7 @@
 * [第22节 基础类库](#第22节-基础类库)
 * [第23节 日期处理](#第23节-日期处理)
 * [第24节 正则表达式](#第24节-正则表达式)
-* [第25节 国际化](#第25节-国际化)
+* [第25节 JAVA IO操作](#第25节-java-io操作)
 ***
 ### 第16节 异常  
 本节示例代码：[ExceptionDemo](/Java_examples/ExceptionDemo.java)  
@@ -222,7 +222,7 @@ RegEx正则表达式
     * replaceFirst()
     * split()
 
-### 第25节 国际化
+### 第25节 JAVA IO操作
 本节示例代码：  
 [RegexDemo](/Java_examples/RegexDemo.java)  
 
