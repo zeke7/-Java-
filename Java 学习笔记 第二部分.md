@@ -223,8 +223,106 @@ RegEx正则表达式
     * split()
 
 ### 第25节 JAVA IO操作
-本节示例代码：  
-[RegexDemo](/Java_examples/RegexDemo.java)  
+JAVA IO操作  
+
+[FileDemo](/Java_examples/FileDemo.java)  
+[OutputStreamDemo](/Java_examples/OutputStreamDemo.java)  
+[InputStreamDemo](/Java_examples/InputStreamDemo.java)  
+[WriterDemo](/Java_examples/WriterDemo.java)  
+[ReaderDemo](/Java_examples/ReaderDemo.java)  
+[MemoStreamDemo](/Java_examples/MemoStreamDemo.java)  
+[PrintStreamDemo](/Java_examples/PrintStreamDemo.java)  
+[BufferedReaderDemo](/Java_examples/BufferedReaderDemo.java)  
+[ScannerDemo](/Java_examples/ScannerDemo.java)  
+[SerializableDemo](/Java_examples/SerializableDemo.java)  
+
+* 五个核心类
+    * File
+    * InputStream
+    * OutputStream
+    * Reader
+    * Writer
+
+* 一个核心接口
+    * Serializable
+
+* File类  
+    * File类是唯一一个与文件本身操作有关的类，包括文件的创建、删除等操作  
+    * 在java.io操作的过程中，会有延迟的情况出现
+    * 有取得文件信息内容的操作功能
+
+* 对文件内容进行操作：
+    * 只能使用字节流或者字符流
+    * 通过File类定义一个要操作的文件路径
+    * 通过字节流或字符流的子类对象为父类实例化
+    * 进行数据的读写操作
+    * 资源操作必须关闭
+
+* java.io包定义了两类流
+    * 字节流：InputStream, OutputStream
+    * 字符流：Reader, Writer
+
+#### 字节流：InputStream, OutputStream
+
+* OutputStream类 专门进行字节数据输出
+    * 输出方法1 ：输出单个字节
+    * 输出方法2 ：输出全部字节数组
+    * 输出方法3 ：输出部分字节数组 （重点）
+
+* OutputStream类为抽象类，必须使用子类进行实例化操作
+* 例：FileOutputStream子类（关注构造方法）
+    * **创建或覆盖已有文件 FileOutputStream(File file)**
+    * 文件追加 FileOutputStream(File file, boolean append)
+
+* InputStream类
+    * 数据读取方式1: read() 返回int -- 读取单个字节，没有数据可以读，返回-1。
+    * 数据读取方式2: read() 返回int -- 读取所有字节，返回读取的数据长度，读取到结尾返回-1
+    * 数据读取方式3: read() 返回int -- 读取多个字节，返回读取部分数据的长度，读取到结尾返回-1
+
+#### 字符流：Reader, Writer
+
+* Writer
+    * 能够输出字符串
+    * 使用FileWriter子类操作文件
+
+* Reader
+    * 使用FileReader子类操作文件
+
+### 字节流和字符流的区别
+
+* 字节流直接与终端进行数据交互
+* 字符流需要将数据经过缓冲区处理后才可以输出
+
+* 字节流输出如果没有使用close()进行资源关闭，结果不会收到影响
+* 字符流没有使用close()，缓冲区中的内容不会被清空，就会没有输出。可手工调用flush()方法强制清空缓冲区
+
+* 对于字节数据的处理比较多,例如: 图片，音乐，电影，文字等
+* 字符流对中文的有效处理
+
+### 使用内存进行输入与输出
+* 字节内存流：ByteArrayInputStream,ByteArrayOutputStream
+* 字符内存流：CharArrayReader, CharArrayWriter
+
+### 打印流：PrintStream(字节),PrintWriter(字符)
+
+### 缓冲区的数据读取
+* 对中文进行处理：
+    * 字符缓冲区流：**BufferedReader**,BufferedWriter
+    * 字符缓冲区流：BufferedInputStream,BufferedOutputStream
+
+* BufferedReader 中的 readLine()方法返回 String
+
+* Scanner 类中 useDelimiter()方法设置的读取的分隔符
+* 程序输出使用打印流，程序输入使用Scanner
+
+#### 对象序列化  
+将保存在内存中的对象数据转换为二进制数据流进行传输的操作，如果对象要被序列化，必须实现java.io.Serializable接口（标识接口）  
+
+
+
+
+
+
 
 
 
