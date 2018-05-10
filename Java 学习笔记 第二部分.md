@@ -10,6 +10,7 @@
 * [第23节 日期处理](#第23节-日期处理)
 * [第24节 正则表达式](#第24节-正则表达式)
 * [第25节 JAVA IO操作](#第25节-java-io操作)
+* [第26节 类集框架](#第26节-类集框架)
 ***
 ### 第16节 异常  
 本节示例代码：[ExceptionDemo](/Java_examples/ExceptionDemo.java)  
@@ -318,8 +319,57 @@ JAVA IO操作
 #### 对象序列化  
 将保存在内存中的对象数据转换为二进制数据流进行传输的操作，如果对象要被序列化，必须实现java.io.Serializable接口（标识接口）  
 
+### 第26节 类集框架
+
+#### 类集框架: 对象数组的应用
+
+[MapDemo](/Java_examples/MapDemo.java)  
+[CollectionOutputDemo](/Java_examples/CollectionOutputDemo.java)  
+[SetDemo](/Java_examples/SetDemo.java)  
+[ListDemo](/Java_examples/ListDemo.java)  
 
 
+* 核心接口
+    * Collection, List, Set
+    * Map
+    * Iterator, Enumeration
+
+#### Collection 接口：单值保存的最大父接口
+* 常用方法：add()和 iteartor()
+* 子接口：List, Set
+
+#### List子接口
+* 常用子类(ArrayList, Vector)
+* ArrayList最为常用的子类  使用异步处理
+* Vector子类 使用同步处理
+* List集合中所保存的数据是按照保存的顺序存放
+* 重要方法
+    * get()取得索引编号的内容
+    * set()设置索引编号的内容
+    * listIterator()
+
+#### Set子接口  
+Set集合下没有重复元素，HashSet子类中排列无序，TreeSet中有序
+* TreeSet 依靠 Comparable接口进行判断
+
+#### 集合输出
+* Iterator
+* ListIterator
+* Enumeration
+* foreach
+
+#### Map接口：负责保存一对对象的信息（key = value）为了信息的查找
+* 可以保存数据，也可以实现查找功能
+* 两个常用子类: HashMap（异步）, Hashtable（同步）
+    * 如果出现重复的key会进行覆盖，使用新值
+    * Hashtable中key和value的值都不允许为空
+* Iterator输出
+    * 当用户使用put()方法向Map集合里面保存一堆数据的时候，所有的数据会被封装炜Map.Entry接口对象
+    * Set<Map.Entry<K,V>> entrySet()
+    * 利用Map接口的entrySet()方法将Map集合变为Set集合，泛型为Map.Entry<K,V>
+    * 利用Set中的iterator()方法将Set集合进行Iterator输出
+    * 每次取出的都是Map.Entry接口对象
+    * 如果使用自定义类作为key，要覆写hashCode()和equals()方法
 
 
 
